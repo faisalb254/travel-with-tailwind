@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" crossorigin href="/assets/index-DLVyCPcN.css">
+</head>
+
+<body class="scroll-smooth">
+    <div class="font-ariel ">
+        <div id="home" class="bg-[#E8E8E8] flex items-center flex-col pt-2 max-lg:items-start">
+            <div class="nav flex justify-center max-lg:hidden">
+                <img class="h-52 w-auto ml-28" src="/assets/logo-6IMDfIhH.png" alt="">
+                <ul class="flex items-center text-[#134368]">
+                    <li
+                        class="ml-5 hover:font-bold hover:underline hover:text-[#ffa500] hover:tracking-[5px] transition-all duration-500">
+                        <a href="#home">HOME</a></li>
+                    <li
+                        class="ml-5 hover:font-bold hover:underline hover:text-[#ffa500] hover:tracking-[5px] transition-all duration-500">
+                        <a href="#about">ABOUT</a></li>
+                    <li
+                        class="ml-5 hover:font-bold hover:underline hover:text-[#ffa500] hover:tracking-[5px] transition-all duration-500">
+                        <a href="#service">SERVICES</a></li>
+                    <li
+                        class="ml-5 hover:font-bold hover:underline hover:text-[#ffa500] hover:tracking-[5px] transition-all duration-500">
+                        <a href="#gallery">GALLERY</a></li>
+                    <li
+                        class="ml-5 hover:font-bold hover:underline hover:text-[#ffa500] hover:tracking-[5px] transition-all duration-500">
+                        <a href="#awards">AWARDS</a></li>
+                    <li
+                        class="ml-5 hover:font-bold hover:underline hover:text-[#ffa500] hover:tracking-[5px] transition-all duration-500">
+                        <a href="#contacts">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="navmobi hidden max-lg:block">
+                <button class="text-lg ml-5" onclick="nav1()"><i class="fa-solid fa-bars"></i></button>
+                <div id="navlist" class="absolute" style="display: none;">
+                    <ul class="w-screen divide-y divide-white">
+                        <li class="text-white bg-[#134368] p-6"><a href="#home">HOME</a></li>
+                        <li class="text-white bg-[#134368] p-6"><a href="#about">ABOUT</a></li>
+                        <li class="text-white bg-[#134368] p-6"><a href="#service">SERVICES</a></li>
+                        <li class="text-white bg-[#134368] p-6"><a href="#gallery">GALLERY</a></li>
+                        <li class="text-white bg-[#134368] p-6"><a href="#awards">AWARDS</a></li>
+                        <li class="text-white bg-[#134368] p-6"><a href="#contacts">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <div class="logo flex justify-center w-screen">
+                    <img class="h-52" src="/assets/logo-6IMDfIhH.png" alt="">
+                </div>
+            </div>
+            <div class="letters flex flex-col items-center pt-10">
+                <h1 class="text-[#134368] text-4xl border-black border-r animate-moving overflow-hidden whitespace-nowrap max-sm:animate-none max-sm:text-wrap max-sm:text-center max-sm:border-0">Never Stop Traveling!</h1>
+                <p class="text-[#ffa500] m-3 text-3xl italic border-b border-[#ffa500] text-center">Once a year, Go some place
+                    you've never been before!!!</p>
+            </div>
+            <div class="travelfig">
+                <figure>
+                    <img class="w-11/12 h-88 mx-6" src="/assets/travel-border-1-1_XSwJBM.png" alt="">
+                </figure>
+            </div>
+            <div id="about" class="text-[#ffa500] flex flex-col justify-center items-center pt-10 pb-10">
+                <h1 class="text-3xl my-5">ABOUT US</h1>
+                <div class="box flex flex-wrap justify-center">
+                    <div class="left w-[500px] max-sm:w-auto">
+                        <div class="text-3xl max-sm:ml-5">
+                            WELCOME
+                        </div>
+                        <p class="text-xl text-[#134368] text-wrap border-t border-[#134368] pt-4 text-justify my-5 mr-12 max-sm:m-5">
+                            In March 1985 Rizvi group established TSY, travel and tour operators.
+                            <br>
+                            TSY specialize in international and domestic travel and tour planing and have a variety of
+                            outbound and options for different travel needs.TSY travel & tour take care of any travel
+                            and tour requirement of it's esteemed clients at global level. TSY has been entering into
+                            new geographic areas and making effort to make the best possible deal to avialble to its
+                            clients.
+                        </p>
+                    </div>
+                    <div class="right w-1/2 max-sm:w-3/4">
+                        <img class="w-full h-auto ml-8 mt-12 max-sm:w- max-sm:m-0" src="/assets/aboutImage-DyueY1ts.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="package" class="py-16">
+            <h1 class="text-[#ffa500] text-3xl text-center mt-7 mb-16">CHOOSE TRAVELING PACKAGE</h1>
+            <div class="travelbox flex justify-center">
+                <div class="left w-[500px]">
+                    <div class="tabs flex flex-wrap">
+                        <button class="m-3 px-6 py-3 bg-[#ffa500] text-white rounded-md" id="but1" onclick="func1()">MICE</button>
+                        <button class="m-3 px-6 py-3 bg-[#5d5d5d] text-white rounded-md" id="but2" onclick="func2()" >LESIURE TRAVELS</button>
+                        <button class="m-3 px-6 py-3 bg-[#5d5d5d] text-white rounded-md" id="but3" onclick="func3()">Umrah</button>
+                    </div>
+                    <div class="text text-justify py-4 px-5">
+                        <p id="t1" class="block ">
+                            From Corporate, Professional and specialist group travel to conferences, meetings, events and leisure planning. TSY offer destination management services worldwide to it's clients.
+                        </p>
+                        
+                        <p id="t2" class="hidden ">
+                            Apart from Ticketing, we design tailor made holidays and tour packages for domestic and international tourists.We provide Worldwide Holtel bookings, Tours, Activities, Transfer, Visa processing and Travel insurance include in our services.
+                        </p>
+
+                        <p id="t3" class="hidden ">
+                            With our exclusive UMRAH packages, we can extend to you the most seamless services you can imagine.
+                        </p>
+                    </div>
+                    <ul class="pl-4 ">
+                    <ul class="pl-4 text-gray-400">
+                        <li><i class="fas fa-check text-[#ffa500]"></i>MICE</li>
+                        <li><i class="fas fa-check text-[#ffa500]"></i>LESIURE TRAVELS</li>
+                        <li><i class="fas fa-check text-[#ffa500]"></i>UMRAH</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img class="max-sm:hidden" src="/assets/fit-CjLYRbJ7.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="service" class=" text-[#ffa500] flex flex-col justify-center items-center bg-[#E8E8E8] p-10">
+            <h1 class=" text-4xl my-6">OUR SERVICES</h1>
+            <div class="servicebox flex justify-around flex-wrap w-3/5 text-center">
+                <div class="box h-52 w-64 text-6xl flex flex-col justify-center items-center">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <p class="text-[#134368] text-2xl my-6">HOTEL BOOKING</p>
+                </div>
+                <div class="box h-52 w-64 text-6xl flex flex-col justify-center items-center">
+                    <i class="fa-solid fa-jet-fighter"></i>
+                    <p class="text-[#134368] text-2xl my-6">AIR FLIGHTS</p>
+                </div>
+                <div class="box h-52 w-64 text-6xl flex flex-col justify-center items-center">
+                    <i class="fa-solid fa-kaaba"></i>
+                    <p class="text-[#134368] text-2xl my-6">UMRAH</p>
+                </div>
+                <div class="box h-52 w-64 text-6xl flex flex-col justify-center items-center">
+                    <i class="fa-solid fa-person"></i>
+                    <p class="text-[#134368] text-2xl my-6">TRAVEL GUIDES</p>
+                </div>
+                <div class="box h-52 w-64 text-6xl flex flex-col justify-center items-center">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <p class="text-[#134368] text-2xl my-6">INCENTIVE TOURS</p>
+                </div>
+                <div class="box h-52 w-64 text-6xl flex flex-col justify-center items-center">
+                    <i class="fa-solid fa-car"></i>
+                    <p class="text-[#134368] text-2xl my-6">CHOISE OF TOURS</p>
+                </div>
+            </div>
+        </div>
+        <div id="gallery" class="text-[#ffa500] flex flex-col items-center mb-16">
+            <h1 class="text-4xl my-6">OUR GALLERY</h1>
+            <div class="imagegallery flex w-2/3 flex-wrap">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/1-mSatYvLb.jpg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/2-Fks92Rrp.jpg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/3-BW-14Enm.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/4-DvE0OyqP.jpg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/5-51LxpWGB.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/6-B_uQojvP.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/7-Cq_0Cni1.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/8-B3sVnxAs.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/9-CAfDgvhM.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/10-DLerCMWx.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/11-DNru9PQR.jpeg" alt="">
+                <img class="h-52 w-52 m-3 p-1 border border-black " src="/assets/12-C6fVBLZM.jpeg" alt="">
+            </div>
+        </div>
+        <div id="awards" class="text-[#ffa500] flex flex-col items-center bg-[#e8e8e8]">
+            <h1 class="text-4xl my-6">OUR AWARDS</h1>
+            <div class="awardgallery flex w-3/5 pb-16 flex-wrap justify-around max-sm:flex-col max-sm:w-full max-sm:items-center">
+                <img class="w-1/4 h-96" src="/assets/award1-F1HhB9vw.png" alt="">
+                <img class="w-1/4 h-96" src="/assets/award2-BVh3Gbux.png" alt="">
+                <img class="w-1/4 h-96" src="/assets/award3-BfFY395F.png" alt="">
+            </div>
+        </div>
+        <div id="message" class="flex flex-col items-center">
+            <h1 class="text-4xl my-6 text-[#ffa500] text-center">OUR CHAIRMAN'S MESSAGE</h1>
+            <div class="messagebox flex flex-wrap w-3/5">
+                <div class="left">
+                    <img class="w-96 h-96 rounded-full" src="/assets/boss-Batfx6Ry.jpeg" alt="">
+                </div>
+                <div class="right text-[#134368] text-justify text-lg w-96">
+                    <p>I welcome you into a glimpse of our organization, which is splashed with colors of youth and freshness. Established in 1975, we vented into the prospect of creating a stress free primarily a GSA into a comprehensive Travel Management Solution Provider.
+                    <br>
+                    <br>
+                    We pride ourselves with the conecpt of a flat orgianization, This skill and talent of our management and employees coupled with our strategy. This gives me confidence that we will further develop new opportunities for the group which is proud of its history, but looks forward to a great future.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="contacts" class="mt-16 mb-10 flex flex-col items-center">
+            <h1 class="text-[#faa500] text-4xl mt-6">TSY Travel & Tours</h1>
+            <div class="foot w-3/4 flex flex-wrap justify-center">
+                <div class="w-60">
+                    <h2 class="text-[#ffa500] my-5 text-2xl">Head Office</h2>
+                    <ul>
+                        <li class="pt-5"><i class="fa-solid fa-location-dot"></i>&emsp;1st Floor, Grand Hotel & Tower,<br>
+                            &emsp;&emsp;9-Davis Road, Lahore Pakistan.
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-60">
+                    <h2 class="text-[#ffa500] my-5 text-2xl">Contact Us</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-phone-flip"></i>&emsp; +923 111 555 395</li>
+                        <li class="pt-5"><i class="fa-solid fa-phone-flip"></i>&emsp; 0423 6362135-37</li>
+                        <li class="pt-5"><i class="fa-regular fa-envelope"></i>&emsp;  info@mytsy.com</li>
+                        <li class="pt-5"><i class="fa-solid fa-laptop"></i>&emsp; www.mytsy.com</li>
+                        <li class="pt-5"><i class="fa-brands fa-facebook"></i>&emsp; <a href="https://www.facebook.com/tsytravels/">facebook.com/tsytravels</a></li>
+                    </ul>
+                </div>
+                <div class="footnav w-60 max-lg:hidden">
+                    <h2 class="text-[#ffa500] my-5 text-2xl ">Navigation</h2>
+                    <ul>
+                        <li class="pt-5"><a href="#home">Home</a></li>
+                        <li class="pt-5"><a href="#about">About</a></li>
+                        <li class="pt-5"><a href="#service">Service</a></li>
+                        <li class="pt-5"><a href="#gallery">Gallery</a></li>
+                        <li class="pt-5"><a href="#awards">Awards</a></li>
+                        <li class="pt-5"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="py-10 w-96 border-b border-black" src="/assets/foot-BtUKBgup.png" alt="">
+            <p>
+                © 2019. All Rights Reserved | Powered by
+                <a style="color:red;" href="https:/www.techloution.com" target="blank">Techloution</a>
+            </p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
