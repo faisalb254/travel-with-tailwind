@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TSY</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" crossorigin href="/assets/index-DLVyCPcN.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-7yXOT6eh.css">
 </head>
 
 <body class="scroll-smooth">
@@ -36,8 +36,8 @@
                 </ul>
             </div>
             <div class="navmobi hidden max-lg:block">
-                <button class="text-lg ml-5" onclick="nav1()"><i class="fa-solid fa-bars"></i></button>
-                <div id="navlist" class="absolute" style="display: none;">
+                <button class="text-lg ml-5" onclick="nav2()"><i class="fa-solid fa-bars"></i></button>
+                <div id="navlist" class="absolute hidden">
                     <ul class="w-screen divide-y divide-white">
                         <li class="text-white bg-[#134368] p-6"><a href="#home">HOME</a></li>
                         <li class="text-white bg-[#134368] p-6"><a href="#about">ABOUT</a></li>
@@ -89,9 +89,9 @@
             <div class="travelbox flex justify-center">
                 <div class="left w-[500px]">
                     <div class="tabs flex flex-wrap">
-                        <button class="m-3 px-6 py-3 bg-[#ffa500] text-white rounded-md" id="but1" onclick="func1()">MICE</button>
-                        <button class="m-3 px-6 py-3 bg-[#5d5d5d] text-white rounded-md" id="but2" onclick="func2()" >LESIURE TRAVELS</button>
-                        <button class="m-3 px-6 py-3 bg-[#5d5d5d] text-white rounded-md" id="but3" onclick="func3()">Umrah</button>
+                        <button class="m-3 px-6 py-3 bg-[#ffa500] text-white rounded-md" id="but1" onclick="buttontoggle('1')">MICE</button>
+                        <button class="m-3 px-6 py-3 bg-[#5d5d5d] text-white rounded-md" id="but2" onclick="buttontoggle('2')" >LESIURE TRAVELS</button>
+                        <button class="m-3 px-6 py-3 bg-[#5d5d5d] text-white rounded-md" id="but3" onclick="buttontoggle('3')">Umrah</button>
                     </div>
                     <div class="text text-justify py-4 px-5">
                         <p id="t1" class="block ">
@@ -167,9 +167,9 @@
         <div id="awards" class="text-[#ffa500] flex flex-col items-center bg-[#e8e8e8]">
             <h1 class="text-4xl my-6">OUR AWARDS</h1>
             <div class="awardgallery flex w-3/5 pb-16 flex-wrap justify-around max-sm:flex-col max-sm:w-full max-sm:items-center">
-                <img class="w-1/4 h-96" src="/assets/award1-F1HhB9vw.png" alt="">
-                <img class="w-1/4 h-96" src="/assets/award2-BVh3Gbux.png" alt="">
-                <img class="w-1/4 h-96" src="/assets/award3-BfFY395F.png" alt="">
+                <img id="faderight" class="w-1/4 h-96 animate-faderight relative" src="/assets/award1-F1HhB9vw.png" alt="">
+                <img class="w-1/4 h-96 relative" src="/assets/award2-BVh3Gbux.png" alt="">
+                <img id="fadeleft" class="w-1/4 h-96 animate-fadeleft relative" src="/assets/award3-BfFY395F.png" alt="">
             </div>
         </div>
         <div id="message" class="flex flex-col items-center">
